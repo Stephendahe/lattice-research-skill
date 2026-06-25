@@ -1,0 +1,8 @@
+---
+description: Lattice Research Skill repository entry point for Cursor agents.
+alwaysApply: false
+---
+
+When working in this repository or installing Lattice Research Skill, start from `AGENTS.md`, then read `docs/agent-installation.md` and `docs/zotero-configuration.md` as needed.
+
+For skill behavior, load `skills/lattice-research-skill/SKILL.md` first, then follow the relevant child skill under `skills/`.

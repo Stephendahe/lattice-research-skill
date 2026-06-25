@@ -1,6 +1,6 @@
 # Lattice Research Skill
 
-Lattice Research Skill is a Zotero-based research-assistance skill set for Codex. It is designed for full-text literature work rather than abstract-only screening.
+Lattice Research Skill is a portable Agent Skills package for AI research agents such as Cursor, Claude, VS Code/GitHub Copilot, and other tools that support `SKILL.md`-based skills. It is designed for full-text literature work rather than abstract-only screening.
 
 The core pain point is that a paper's abstract and conclusion often do not expose the concrete numerical values, experimental procedures, boundary conditions, figures, tables, or supplementary details needed for serious research-gap analysis. Lattice connects the research workflow to Zotero and local PDF evidence so users can reason from full text, not from summaries.
 
@@ -15,7 +15,7 @@ Lattice helps organize scientific literature into structured evidence trees:
 These structures make the research-assistance chain explicit:
 
 ```text
-Zotero + PDFs + supplements
+Zotero + PDFs + supplements + an Agent Skills-compatible AI agent
   -> data / experiment / method extraction
   -> comparability and evidence-level audit
   -> candidate Research Gap
@@ -69,20 +69,36 @@ The main page intentionally keeps only this entry point so the setup guide can b
 
 ## Installation
 
-Clone this repository and copy the skills into your Codex skills directory:
+Clone this repository and copy the skills into the skill directory used by your AI agent:
 
 ```bash
 git clone https://github.com/Stephendahe/lattice-research-skill.git
 cd lattice-research-skill
-mkdir -p ~/.codex/skills
-cp -R skills/lattice-* ~/.codex/skills/
 ```
 
-Restart Codex or open a new Codex session after installation.
+Common install targets:
+
+```bash
+# Cursor global skills
+mkdir -p ~/.cursor/skills
+cp -R skills/lattice-* ~/.cursor/skills/
+
+# Claude global skills
+mkdir -p ~/.claude/skills
+cp -R skills/lattice-* ~/.claude/skills/
+```
+
+For project-local installs, copy the same `skills/lattice-*` folders into the project skill directory supported by your agent.
+
+If your agent does not support automatic skill discovery, use [AGENTS.md](AGENTS.md) as the repository-level entry point.
+
+See the full multi-agent installation guide:
+
+[Agent Installation Guide](docs/agent-installation.md)
 
 ## Requirements
 
-- Codex with local skills support.
+- An AI agent with Agent Skills / `SKILL.md` support, or an agent that can read this repository as project instructions.
 - Zotero Desktop for the Zotero-backed workflow.
 - A working Zotero local API / connector setup if you want DOI import, Zotero search, attachment lookup, or indexed full-text reading.
 - Local PDFs or user-supplied full texts for strong data/method/experiment conclusions.

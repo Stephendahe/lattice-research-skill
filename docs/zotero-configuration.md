@@ -2,7 +2,7 @@
 
 This page explains the Zotero setup expected by Lattice Research Skill. Lattice uses Zotero as the local literature hub for DOI records, PDF attachments, indexed full text, and project-specific evidence checks.
 
-The goal is simple: make sure Codex can see the same papers, PDFs, and indexed text that you can see in Zotero, without treating metadata or abstracts as full-text evidence.
+The goal is simple: make sure your AI agent can see the same papers, PDFs, and indexed text that you can see in Zotero, without treating metadata or abstracts as full-text evidence.
 
 ## What This Setup Enables
 
@@ -77,7 +77,7 @@ Recommended configuration:
 - Choose "download files at sync time" when you want Lattice to find PDFs locally without manual opening.
 - If you choose "download files as needed", open the target PDF in Zotero once before running a full-text Lattice workflow.
 
-Lattice works best when PDFs are actually present on the same machine where Codex is running.
+Lattice works best when PDFs are actually present on the same machine where the agent is running.
 
 ## Recommended Lattice Collection Pattern
 
@@ -86,9 +86,9 @@ For project work, use a dedicated Zotero collection so Lattice does not need to 
 Suggested pattern:
 
 ```text
-Codex Mother Library
-Codex Mother Library / YYYY-MM-DD
-Codex Mother Library / YYYY-MM-DD - Project Name
+Lattice Mother Library
+Lattice Mother Library / YYYY-MM-DD
+Lattice Mother Library / YYYY-MM-DD - Project Name
 ```
 
 `lattice-find-papers` should import or match screened DOI records during the Find Papers stage. `lattice-gaps` should later read the project folder, request-PDF folder, manifests, and matching Zotero records without repeating DOI import.
@@ -111,7 +111,7 @@ Strong data, experiment, and method gaps usually require `L2_full_text` or highe
 
 ## Common Problems
 
-### Zotero is running, but Codex cannot connect
+### Zotero is running, but the agent cannot connect
 
 Check:
 

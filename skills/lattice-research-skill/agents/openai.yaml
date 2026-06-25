@@ -1,6 +1,0 @@
-interface:
-  display_name: "Lattice Research Skill"
-  short_description: "Routes Lattice research workflow skills"
-  default_prompt: "Use $lattice-research-skill to choose the right child skill for finding papers, importing DOI records, requesting PDFs, finding gaps, verifying proposed gaps, or auditing evidence."
-policy:
-  allow_implicit_invocation: true

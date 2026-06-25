@@ -1,6 +1,6 @@
 interface:
   display_name: "措辞 skill / Lattice Wording"
   short_description: "Review and update Lattice teacher wording lexicon"
-  default_prompt: "Use $lattice-wording to review my Stage 2 draft wording against the Lattice teacher-revision lexicon."
+  default_prompt: "Use lattice-wording to review my Stage 2 draft wording against the Lattice teacher-revision lexicon."
 policy:
   allow_implicit_invocation: true

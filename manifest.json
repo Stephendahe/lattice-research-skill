@@ -1,7 +1,7 @@
 {
   "name": "lattice-research-skill",
   "display_name": "Lattice Research Skill",
-  "description": "Zotero-based Codex skill set for full-text scientific literature analysis, evidence trees, research-gap discovery, and Anti-Gap verification.",
+  "description": "Zotero-based Agent Skills package for full-text scientific literature analysis, evidence trees, research-gap discovery, and Anti-Gap verification.",
   "skills": [
     "lattice-research-skill",
     "lattice-find-papers",
@@ -16,4 +16,3 @@
     }
   ]
 }
-

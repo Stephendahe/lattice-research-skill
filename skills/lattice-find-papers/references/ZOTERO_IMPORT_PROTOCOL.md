@@ -23,19 +23,19 @@ Do not batch-import `background_only`, `exclude`, or low-relevance records unles
 Use a parent collection named:
 
 ```text
-Codex 母文献库
+Lattice 母文献库
 ```
 
 Default date batch:
 
 ```text
-Codex 母文献库 / YYYY-MM-DD
+Lattice 母文献库 / YYYY-MM-DD
 ```
 
 Project or cross-project batch:
 
 ```text
-Codex 母文献库 / YYYY-MM-DD - project_name
+Lattice 母文献库 / YYYY-MM-DD - project_name
 ```
 
 If the available Zotero connector/helper cannot create collections, import into the selected Zotero target, record the limitation, and report the expected collection name to the user.

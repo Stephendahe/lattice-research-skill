@@ -59,7 +59,7 @@ Only `request_PDF/` stays at the run root. Put every other Lattice Find Papers o
 4. Import selected DOI records into Zotero.
    - Read `references/ZOTERO_IMPORT_PROTOCOL.md`.
    - Import only screened, relevant records: `include_core`, `include_variable`, `include_method`, `include_parameter`, and `need_full_text`.
-   - Use `Codex 母文献库` as the parent collection when collection control is available.
+   - Use `Lattice 母文献库` as the parent collection when collection control is available.
    - Use date naming by default: `YYYY-MM-DD`; use `YYYY-MM-DD - project_name` for cross-project or project-specific batches.
    - Write `find_papers_outputs/tables/zotero_import_manifest.csv`.
    - If Zotero write/import is blocked, record the blocker and continue to Request PDF generation.
@@ -100,7 +100,7 @@ Use these scripts when appropriate:
 - No figures/tables/SI, no quantitative extraction.
 - Missing full text means generate Request PDF, not a fake conclusion.
 - DOI import into Zotero is a literature-management and full-text-acquisition aid; it is not evidence that full text was read.
-- Do not call a broad phrase a research gap; leave gap discovery to `$lattice-gaps`.
+- Do not call a broad phrase a research gap; leave gap discovery to `lattice-gaps`.
 
 ## Output To User
 

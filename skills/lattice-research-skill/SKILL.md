@@ -13,10 +13,10 @@ Lattice Research Skill is the router for Lattice research workflow. It should no
 
 | User intent | Use skill | Notes |
 |---|---|---|
-| Find papers, search literature, audit coverage, import selected DOI records into Zotero, create Request PDF list, prepare `request_PDF/doi_list.md` | `$lattice-find-papers` | Also owns optional full-text scan, data extraction, mechanism maps, variable tables, experiment audit side products, and `zotero_import_manifest.csv`. |
-| Analyze project evidence, discover research gaps, or directly verify proposed gaps | `$lattice-gaps` | Reads request folders, Lattice Find Papers manifests, and matching Zotero PDFs/full text. Includes embedded Anti-Gap verification and verify-only mode. |
-| Check whether a research output is honest and evidence-bound | `$lattice-honesty` | Use for unsupported claims, abstract-as-full-text, correlation-as-causation, and uncertainty marking. |
-| Review proposal/manuscript wording or supervisor comments | `$lattice-wording` | Use for Chinese/English academic wording and reusable wording-rule updates. |
+| Find papers, search literature, audit coverage, import selected DOI records into Zotero, create Request PDF list, prepare `request_PDF/doi_list.md` | `lattice-find-papers` | Also owns optional full-text scan, data extraction, mechanism maps, variable tables, experiment audit side products, and `zotero_import_manifest.csv`. |
+| Analyze project evidence, discover research gaps, or directly verify proposed gaps | `lattice-gaps` | Reads request folders, Lattice Find Papers manifests, and matching Zotero PDFs/full text. Includes embedded Anti-Gap verification and verify-only mode. |
+| Check whether a research output is honest and evidence-bound | `lattice-honesty` | Use for unsupported claims, abstract-as-full-text, correlation-as-causation, and uncertainty marking. |
+| Review proposal/manuscript wording or supervisor comments | `lattice-wording` | Use for Chinese/English academic wording and reusable wording-rule updates. |
 
 ## Shared Rules
 
@@ -29,12 +29,12 @@ Lattice Research Skill is the router for Lattice research workflow. It should no
 
 ## Default Routing
 
-If the user asks to start from a research topic, use `$lattice-find-papers`.
+If the user asks to start from a research topic, use `lattice-find-papers`.
 
-If the user already has PDFs in `request_PDF/`, Zotero project literature, or other project evidence and asks for gaps, use `$lattice-gaps`.
+If the user already has PDFs in `request_PDF/`, Zotero project literature, or other project evidence and asks for gaps, use `lattice-gaps`.
 
-If the user gives one or more candidate gaps and asks whether they are real, use `$lattice-gaps` in verify-only mode.
+If the user gives one or more candidate gaps and asks whether they are real, use `lattice-gaps` in verify-only mode.
 
-If the user asks whether a report is overclaiming, use `$lattice-honesty`.
+If the user asks whether a report is overclaiming, use `lattice-honesty`.
 
-If the user asks to polish or respond to comments, use `$lattice-wording`.
+If the user asks to polish or respond to comments, use `lattice-wording`.
