@@ -147,13 +147,13 @@ Online metadata sources such as Crossref can help locate papers, but they should
 
 This tutorial was written for Lattice and paraphrases the setup implications of the following sources:
 
-- Zotero Web API documentation: local API base path, authentication behavior, local API differences, and status-code behavior.  
+- Zotero Web API documentation: local API base path, authentication behavior, local API differences, and status-code behavior.
   <https://www.zotero.org/support/dev/web_api/v3/basics>
-- Zotero Search preferences documentation: PDF/EPUB/HTML full-text indexing, index statistics, and reindexing behavior.  
+- Zotero Search preferences documentation: PDF/EPUB/HTML full-text indexing, index statistics, and reindexing behavior.
   <https://www.zotero.org/support/preferences/search>
-- Zotero Sync preferences documentation: data sync, full-text content sync, attachment file syncing, and download timing.  
+- Zotero Sync preferences documentation: data sync, full-text content sync, attachment file syncing, and download timing.
   <https://www.zotero.org/support/preferences/sync>
-- Zotero developer announcement for the desktop local HTTP API: enabling local communication and the `localhost:23119` usage pattern.  
+- Zotero developer announcement for the desktop local HTTP API: enabling local communication and the `localhost:23119` usage pattern.
   <https://groups.google.com/g/zotero-dev/c/ElvHhIFAXrY/m/fA7SKKwsAgAJ>
-- Third-party Zotero MCP server documentation, used only as a reference point for MCP-style local Zotero access patterns.  
+- Third-party Zotero MCP server documentation, used only as a reference point for MCP-style local Zotero access patterns.
   <https://mcpservers.org/servers/kujenga/zotero-mcp>
