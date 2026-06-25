@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "pseudo_gap_item",
+  "type": "object",
+  "required": [
+    "phrase",
+    "why_risky",
+    "rewrite_action"
+  ],
+  "properties": {
+    "phrase": {
+      "type": "string"
+    },
+    "why_risky": {
+      "type": "string"
+    },
+    "rewrite_action": {
+      "type": "string"
+    }
+  }
+}

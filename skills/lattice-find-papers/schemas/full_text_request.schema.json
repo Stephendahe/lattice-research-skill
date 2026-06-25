@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "full_text_request.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "request_id",
+    "paper_id",
+    "title",
+    "priority"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "current_access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_partial_text",
+        "L2_partial_full_text",
+        "L3_figures_only",
+        "L4_supplement_missing",
+        "L5_full_text_available"
+      ]
+    },
+    "why_full_text_needed": {
+      "type": "string"
+    },
+    "needed_sections": {
+      "type": "string"
+    },
+    "missing_for_tasks": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "user_action": {
+      "type": "string"
+    },
+    "resume_checkpoint": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "local_library_checked": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    },
+    "local_library_result": {
+      "type": "string"
+    },
+    "local_resolution_status": {
+      "type": "string",
+      "enum": [
+        "unresolved",
+        "resolved_by_online_source",
+        "resolved_by_zotero",
+        "resolved_by_local_pdf_folder",
+        "partially_resolved_missing_supplement",
+        "tentative_match_needs_confirmation",
+        "request_required"
+      ]
+    }
+  }
+}

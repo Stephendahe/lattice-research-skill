@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+runs/
+request_PDF/*.pdf
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+

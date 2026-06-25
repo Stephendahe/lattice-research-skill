@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "variable_relation.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "relation_id",
+    "paper_id",
+    "variable_A",
+    "variable_B",
+    "access_level"
+  ],
+  "properties": {
+    "relation_id": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "variable_A": {
+      "type": "string"
+    },
+    "variable_A_role": {
+      "type": "string"
+    },
+    "variable_B": {
+      "type": "string"
+    },
+    "variable_B_role": {
+      "type": "string"
+    },
+    "relation_direction": {
+      "type": "string"
+    },
+    "relation_form": {
+      "type": "string"
+    },
+    "relation_type": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "type": "string"
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "control_status": {
+      "type": "string"
+    },
+    "controlled_variables": {
+      "type": "string"
+    },
+    "missing_variables": {
+      "type": "string"
+    },
+    "default_assumptions": {
+      "type": "string"
+    },
+    "mechanism_link": {
+      "type": "string"
+    },
+    "boundary_conditions": {
+      "type": "string"
+    },
+    "comparability_status": {
+      "type": "string",
+      "enum": [
+        "comparable",
+        "partially_comparable",
+        "not_comparable",
+        "unclear"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "speculative"
+      ]
+    },
+    "source_location": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "paper_master.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "paper_id",
+    "title"
+  ],
+  "properties": {
+    "paper_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "journal": {
+      "type": "string"
+    },
+    "system_or_material": {
+      "type": "string"
+    },
+    "research_object": {
+      "type": "string"
+    },
+    "core_phenomenon": {
+      "type": "string"
+    },
+    "method_type": {
+      "type": "string"
+    },
+    "method_detail": {
+      "type": "string"
+    },
+    "main_claim": {
+      "type": "string"
+    },
+    "mechanism_claim": {
+      "type": "string"
+    },
+    "variables_changed": {
+      "type": "string"
+    },
+    "variables_controlled": {
+      "type": "string"
+    },
+    "variables_unreported": {
+      "type": "string"
+    },
+    "default_assumptions": {
+      "type": "string"
+    },
+    "key_observables": {
+      "type": "string"
+    },
+    "key_figures": {
+      "type": "string"
+    },
+    "extractable_parameters": {
+      "type": "string"
+    },
+    "inclusion_decision": {
+      "type": "string",
+      "enum": [
+        "include_core",
+        "include_variable",
+        "include_method",
+        "include_parameter",
+        "background_only",
+        "exclude",
+        "need_full_text"
+      ]
+    },
+    "inclusion_reason": {
+      "type": "string"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "full_text_verified",
+        "abstract_only",
+        "metadata_only",
+        "full_text_not_available",
+        "not_verified"
+      ]
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

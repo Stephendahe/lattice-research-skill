@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "experiment_pipeline_audit.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "audit_id",
+    "paper_id",
+    "access_level"
+  ],
+  "properties": {
+    "audit_id": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "material_source": {
+      "type": "string"
+    },
+    "supplier_batch_purity": {
+      "type": "string"
+    },
+    "pretreatment": {
+      "type": "string"
+    },
+    "synthesis_or_processing": {
+      "type": "string"
+    },
+    "assembly_process": {
+      "type": "string"
+    },
+    "environment_condition": {
+      "type": "string"
+    },
+    "test_protocol": {
+      "type": "string"
+    },
+    "post_processing": {
+      "type": "string"
+    },
+    "data_processing": {
+      "type": "string"
+    },
+    "repeated_trials": {
+      "type": "string"
+    },
+    "reported_statistics": {
+      "type": "string"
+    },
+    "controlled_variables": {
+      "type": "string"
+    },
+    "uncontrolled_variables": {
+      "type": "string"
+    },
+    "unreported_variables": {
+      "type": "string"
+    },
+    "default_fixed_variables": {
+      "type": "string"
+    },
+    "author_explanation": {
+      "type": "string"
+    },
+    "core_variable_match": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "conclusion_threat"
+      ]
+    },
+    "impact_on_conclusion": {
+      "type": "string"
+    },
+    "reviewer_note": {
+      "type": "string"
+    }
+  }
+}

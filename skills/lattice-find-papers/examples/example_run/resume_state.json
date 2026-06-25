@@ -1,0 +1,24 @@
+{
+  "run_id": "example_run",
+  "topic": "example_only",
+  "completed_phases": [
+    "phase_0_task_intake"
+  ],
+  "blocked_phases": [
+    "phase_7_request_queue"
+  ],
+  "blocking_requests": [
+    "R001"
+  ],
+  "next_resume_phase": "phase_10_structure_round",
+  "required_user_files": [
+    "P001"
+  ],
+  "tables_completed": [
+    "papers_master.csv"
+  ],
+  "tables_partial": [
+    "full_text_availability.csv"
+  ],
+  "last_updated": "example_only"
+}

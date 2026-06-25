@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "evidence_span.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "evidence_id",
+    "paper_id",
+    "source_location",
+    "access_level"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "paper_id": {
+      "type": "string"
+    },
+    "source_text": {
+      "type": "string"
+    },
+    "source_location": {
+      "type": "string"
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "extracted_claim": {
+      "type": "string"
+    },
+    "claim_type": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "type": "string"
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "full_text_verified",
+        "abstract_only",
+        "metadata_only",
+        "full_text_not_available",
+        "not_verified"
+      ]
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "speculative"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

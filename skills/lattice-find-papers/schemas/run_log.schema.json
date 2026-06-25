@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "run_log",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "event",
+    "level"
+  ],
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "event": {
+      "type": "string"
+    },
+    "phase": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mechanism_comparison.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "mechanism_id",
+    "mechanism_name",
+    "access_level"
+  ],
+  "properties": {
+    "mechanism_id": {
+      "type": "string"
+    },
+    "mechanism_name": {
+      "type": "string"
+    },
+    "papers": {
+      "type": "string"
+    },
+    "causal_chain": {
+      "type": "string"
+    },
+    "trigger_condition": {
+      "type": "string"
+    },
+    "starting_site": {
+      "type": "string"
+    },
+    "key_variables": {
+      "type": "string"
+    },
+    "supporting_evidence": {
+      "type": "string"
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "string"
+    },
+    "applicable_conditions": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "speculative"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

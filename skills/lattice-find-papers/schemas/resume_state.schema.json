@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "resume_state",
+  "type": "object",
+  "required": [
+    "run_id",
+    "topic",
+    "completed_phases",
+    "blocked_phases",
+    "blocking_requests",
+    "next_resume_phase",
+    "required_user_files",
+    "tables_completed",
+    "tables_partial",
+    "last_updated"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "completed_phases": {
+      "type": "array"
+    },
+    "blocked_phases": {
+      "type": "array"
+    },
+    "blocking_requests": {
+      "type": "array"
+    },
+    "next_resume_phase": {
+      "type": "string"
+    },
+    "required_user_files": {
+      "type": "array"
+    },
+    "tables_completed": {
+      "type": "array"
+    },
+    "tables_partial": {
+      "type": "array"
+    },
+    "last_updated": {
+      "type": "string"
+    }
+  }
+}

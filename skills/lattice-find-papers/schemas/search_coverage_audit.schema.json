@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "search_coverage_audit.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "source_name",
+    "query_block",
+    "query_string"
+  ],
+  "properties": {
+    "source_name": {
+      "type": "string"
+    },
+    "query_block": {
+      "type": "string"
+    },
+    "query_string": {
+      "type": "string"
+    },
+    "date_searched": {
+      "type": "string"
+    },
+    "results_count": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "unique_after_dedup": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "covered_publishers": {
+      "type": "string"
+    },
+    "covered_journals": {
+      "type": "string"
+    },
+    "year_range": {
+      "type": "string"
+    },
+    "method_types": {
+      "type": "string"
+    },
+    "mechanism_types": {
+      "type": "string"
+    },
+    "variable_types": {
+      "type": "string"
+    },
+    "coverage_warning": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

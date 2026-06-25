@@ -1,0 +1,17 @@
+variables:
+  - id: interface_roughness
+    zh_name: 界面粗糙度
+    en_name: interface roughness
+    abbreviation: ""
+    aliases: [roughness, surface roughness]
+    definition: 界面形貌起伏程度。
+    unit: nm 或 um
+    scale: micro/nano
+    applies_to: 界面形貌与成核位置分析
+    must_report: true
+    must_control_when: 比较枝晶成核位置或界面稳定性
+    missing_consequence: 不能判断粗糙度是否是机制差异来源
+    related_observables: [成核位置, 生长速率, 临界电流密度]
+    related_mechanisms: [缺陷诱导, 电场集中]
+    examples: [AFM 粗糙度, SEM 截面形貌]
+    notes: 示例变量，需按主题定制

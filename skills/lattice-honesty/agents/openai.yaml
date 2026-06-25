@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lattice Honesty"
+  short_description: "Score honesty and evidence-bound claims"
+  default_prompt: "Use $lattice-honesty to audit my report for unsupported claims, evidence boundaries, and honesty score."
+policy:
+  allow_implicit_invocation: true

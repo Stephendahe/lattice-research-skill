@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "core_variable",
+  "type": "object",
+  "required": [
+    "id",
+    "zh_name",
+    "en_name"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "zh_name": {
+      "type": "string"
+    },
+    "en_name": {
+      "type": "string"
+    },
+    "must_report": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    }
+  }
+}

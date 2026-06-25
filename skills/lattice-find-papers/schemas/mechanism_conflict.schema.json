@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mechanism_conflict.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "conflict_id",
+    "paper_A",
+    "paper_B"
+  ],
+  "properties": {
+    "conflict_id": {
+      "type": "string"
+    },
+    "paper_A": {
+      "type": "string"
+    },
+    "paper_B": {
+      "type": "string"
+    },
+    "shared_question": {
+      "type": "string"
+    },
+    "A_claim": {
+      "type": "string"
+    },
+    "B_claim": {
+      "type": "string"
+    },
+    "apparent_conflict": {
+      "type": "string"
+    },
+    "variable_differences": {
+      "type": "string"
+    },
+    "pipeline_differences": {
+      "type": "string"
+    },
+    "boundary_condition_differences": {
+      "type": "string"
+    },
+    "contradiction_type": {
+      "type": "string"
+    },
+    "best_interpretation": {
+      "type": "string"
+    },
+    "missing_evidence": {
+      "type": "string"
+    },
+    "access_level_sufficient": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    },
+    "implication_for_user": {
+      "type": "string"
+    }
+  }
+}

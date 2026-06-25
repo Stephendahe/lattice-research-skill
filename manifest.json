@@ -1,0 +1,19 @@
+{
+  "name": "lattice-research-skill",
+  "display_name": "Lattice Research Skill",
+  "description": "Zotero-based Codex skill set for full-text scientific literature analysis, evidence trees, research-gap discovery, and Anti-Gap verification.",
+  "skills": [
+    "lattice-research-skill",
+    "lattice-find-papers",
+    "lattice-gaps",
+    "lattice-wording",
+    "lattice-honesty"
+  ],
+  "deprecated_or_merged": [
+    {
+      "name": "lattice-anti-gap",
+      "status": "merged into lattice-gaps verify-only mode"
+    }
+  ]
+}
+

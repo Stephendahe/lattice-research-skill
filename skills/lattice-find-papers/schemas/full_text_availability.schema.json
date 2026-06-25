@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "full_text_availability.schema.json",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "paper_id",
+    "title",
+    "access_status",
+    "access_level"
+  ],
+  "properties": {
+    "paper_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "access_status": {
+      "type": "string",
+      "enum": [
+        "metadata_only",
+        "abstract_only",
+        "partial_text",
+        "full_text_available",
+        "figures_available",
+        "supplement_available",
+        "supplement_missing",
+        "paywalled_or_unavailable",
+        "user_uploaded",
+        "needs_user_upload"
+      ]
+    },
+    "access_level": {
+      "type": "string",
+      "enum": [
+        "L0_metadata_only",
+        "L1_title_abstract",
+        "L2_partial_text",
+        "L2_full_text",
+        "L3_figures_tables",
+        "L4_supplementary",
+        "L5_raw_data_code"
+      ]
+    },
+    "available_sections": {
+      "type": "string"
+    },
+    "missing_sections": {
+      "type": "string"
+    },
+    "needs_user_upload": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    },
+    "request_priority": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        ""
+      ]
+    },
+    "resume_checkpoint": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "local_library_checked": {
+      "type": [
+        "boolean",
+        "string"
+      ]
+    },
+    "local_library_source": {
+      "type": "string",
+      "enum": [
+        "none",
+        "zotero_local_api",
+        "zotero_export",
+        "local_pdf_folder",
+        "local_supplement_folder",
+        "manual_path_list"
+      ]
+    },
+    "local_match_method": {
+      "type": "string"
+    },
+    "local_match_confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low",
+        "tentative",
+        ""
+      ]
+    },
+    "local_full_text_status": {
+      "type": "string",
+      "enum": [
+        "not_found",
+        "metadata_only",
+        "abstract_only",
+        "indexed_fulltext_only",
+        "pdf_found",
+        "html_found",
+        "supplement_found",
+        "raw_data_found",
+        "code_found",
+        "needs_manual_confirmation",
+        ""
+      ]
+    },
+    "local_supplement_status": {
+      "type": "string",
+      "enum": [
+        "not_found",
+        "metadata_only",
+        "abstract_only",
+        "indexed_fulltext_only",
+        "pdf_found",
+        "html_found",
+        "supplement_found",
+        "raw_data_found",
+        "code_found",
+        "needs_manual_confirmation",
+        ""
+      ]
+    },
+    "local_resolution_notes": {
+      "type": "string"
+    }
+  }
+}
